@@ -2,6 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Cascadia+Code:ital,wght@0,200..700;1,200..700&family=Cascadia+Mono:ital,wght@0,200..700;1,200..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Cascadia+Code:ital,wght@0,200..700;1,200..700&family=Cascadia+Mono:ital,wght@0,200..700;1,200..700&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
 
+:root
+{
+    --azul-p:#091D56 ;
+}
 
 *
 {
@@ -67,8 +71,6 @@ nav
 .card
 {
   color: rgb(255, 255, 255);
-  margin-top: 160px;
-  margin-left: 200px;
   width: auto;
   font-size: 23px;
 }
@@ -82,6 +84,8 @@ nav
 .card2
 {
   font-size: 30px;
+  width: 580px;
+  word-wrap: break-word;
 }
 
 .perfil1
@@ -89,7 +93,6 @@ nav
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: -330px;
   height: 300px;
 }
 
@@ -101,9 +104,30 @@ nav
 footer
 {
   background: linear-gradient(to right, #5e8ecd 0%, #2d2a6d 50%, #0a0730 100%);
-  width: 100;
+  width: 100%;
   height: 100px;
   position: fixed;
   bottom: 0;
+}
 
+.span-color
+{
+  color: var(--azul-p);
+}
+
+.card-dir
+{
+  color: aliceblue;
+
+}
+
+.informacoes
+{
+  display: flex;
+  margin-top: 150px;
+  align-items: center;
+  justify-content: space-between;
+  margin:180px auto;
+  width: 90%;
+  
 }
