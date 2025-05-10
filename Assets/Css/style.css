@@ -1,10 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Cascadia+Code:ital,wght@0,200..700;1,200..700&family=Cascadia+Mono:ital,wght@0,200..700;1,200..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Cascadia+Code:ital,wght@0,200..700;1,200..700&family=Cascadia+Mono:ital,wght@0,200..700;1,200..700&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Cal+Sans&family=Cascadia+Code:ital,wght@0,200..700;1,200..700&family=Cascadia+Mono:ital,wght@0,200..700;1,200..700&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Cal+Sans&family=Cascadia+Code:ital,wght@0,200..700;1,200..700&family=Cascadia+Mono:ital,wght@0,200..700;1,200..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Cal+Sans&family=Cascadia+Code:ital,wght@0,200..700;1,200..700&family=Cascadia+Mono:ital,wght@0,200..700;1,200..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 
 :root
 {
-    --azul-p:#091D56 ;
+    --azul-p:#3a56bd ;
 }
 
 *
@@ -16,14 +21,14 @@
 
 body
 {
-  background-color: rgb(0, 0, 0);
+  background-color:#121212
 }
 
 nav
 {
   display: flex;
   justify-content: space-between;
-  background-color: black;
+  background-color: #3a56bd;
 }
 
 .esquerda
@@ -48,6 +53,7 @@ nav
   color: white;
   transition: all 500ms;
   border-radius: 22px;
+  padding: 3px;
 }
 
 .direita
@@ -56,8 +62,8 @@ nav
   align-items: center;
   justify-content: space-between;
   font-size: 20px;
-  margin-right: 600px;
-  gap: 300px;
+  margin-right: 100px;
+  gap: 80px;
 }
 
 .links-nav:hover
@@ -65,27 +71,32 @@ nav
   background-color: white;
   color: black;
   border-radius: 22px;
-  padding: 10px;
+  scale: 1.6;
 }
 
 .card
 {
   color: rgb(255, 255, 255);
-  width: auto;
-  font-size: 23px;
 }
 
 .card1
 {
-  display: flex;
-  margin-left: 45px;
+  align-items: center;
+  font-size: 40px;
+  font-family: Montserrat;
 }
 
-.card2
+.card2 
 {
-  font-size: 30px;
-  width: 580px;
-  word-wrap: break-word;
+  font-size: 26px;
+  width: 420px;
+  height: 400px;
+  font-family: inter;
+}
+
+.span-color
+{
+  color: #0077cc; 
 }
 
 .perfil1
@@ -93,7 +104,8 @@ nav
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 300px;
+  height: 400px;
+  width: 400px
 }
 
 .img1
@@ -103,11 +115,11 @@ nav
 
 footer
 {
-  background: linear-gradient(to right, #5e8ecd 0%, #2d2a6d 50%, #0a0730 100%);
+  background: #121212;
   width: 100%;
-  height: 100px;
-  position: fixed;
+  height: 120px;
   bottom: 0;
+
 }
 
 .span-color
@@ -117,17 +129,76 @@ footer
 
 .card-dir
 {
-  color: aliceblue;
+  color: white;
+  font-size: 30px;
+  width: 420px;
+  height: 400px;
+}
 
+.title-card-dir
+{
+  font-family: Montserrat;
+  font-size: 40px;
+}
+
+.card-dir p
+{
+  font-size: 26px;
+  font-family: inter;
 }
 
 .informacoes
 {
   display: flex;
-  margin-top: 150px;
-  align-items: center;
   justify-content: space-between;
-  margin:180px auto;
-  width: 90%;
+  width: 65%;
+  margin: 220px auto;
+  align-items: center;
+  scale: 1.35;
+}
+
+.secP
+{
+  display: flex;
+  margin: 150px;
+  justify-content: space-between;
+  margin-top: 150px;
+}
+
+.carta
+{
+  width: 300px;
+  height: 490px;
+  background-color: var(--azul-p);
+  transition: all 1s;
+  border-radius: 22px;
+}
+
+.carta:hover
+{
+  scale: 1.1;
+}
+
+.title-carta
+{
+  text-align: center;
+  margin-top: 15px;
+  color:white;
+}
+
+.title-secP
+{
+  text-align: center;
+  font-size: 60px;
+  font-family:Montserrat ;
+  color:#121212 ;
+  margin-top: 50px;
+  
   
 }
+.color-secP
+{
+  background:linear-gradient(to bottom right, #2c24bb,#4469c8,#678bdd);
+  height: 865px;
+}
+
